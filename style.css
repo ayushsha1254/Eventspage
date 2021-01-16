@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    /* overflow: hidden; */
+}
+
+body {
+    background-color: #313435;
+}
+
+/* Nav Bar */
+nav {
+    background: #282b33;
+    padding: 1px 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+nav ul li.items {
+    position: relative;
+    width: auto;
+    margin: 0 16px;
+    text-align: center;
+    order: 3;
+}
+
+nav ul li.items:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 5px;
+    height: 2px;
+    width: 100%;
+    background: #33ffff;
+    opacity: 0;
+    transition: all 0.2s linear;
+}
+
+nav ul li.items:hover:after {
+    opacity: 1;
+    bottom: 2px;
+    margin-top: 55px;
+}
+
+nav ul li.logo {
+    flex: 1;
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    cursor: default;
+    user-select: none;
+}
+
+nav ul li a {
+    font-family: "Roboto";
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 23px;
+    padding: 20px 0px;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+nav ul li:hover a {
+    color: cyan;
+}
+
+nav ul li i {
+    font-size: 23px;
+}
+
+nav ul li.btn {
+    display: none;
+}
+
+nav ul li.btn.hide i:before {
+    content: "\f00d";
+}
+
+/* Show Bar */
+
+.topshows {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom: 2px solid white;
+}
+
+.shows-det1 {
+
+    margin: 20px;
+    padding: 10px;
+    border-right: 2px solid white;
+}
+
+#thirteen {
+    height: 100%;
+    width: 100%;
+    font-family: Swis721 BdOul BT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 288px;
+    letter-spacing: -0.04em;
+    color: rgba(255, 255, 255, 0.68);
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+}
+
+#showsdone {
+    position: relative;
+    width: 390px;
+    font-family: Alatsi;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0.68);
+    top: -100px;
+    text-align: center;
+
+}
+
+.up-title {
+
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    margin: 20px;
+
+}
+
+.up-tit {
+    font-family: Swis721 BdOul BT;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    padding-bottom: 20px;
+    padding-top: 25px;
+    letter-spacing: -0.04em;
+    text-align: right;
+
+    color: #c7c7c7;
+
+
+}
+
+.up-img {
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 370px;
+    box-shadow: -4px -4px 5px rgba(150, 150, 150, 0.25), 4px 4px 5px rgba(150, 150, 150, 0.25);
+
+    border-radius: 21px;
+    min-width: 200px;
+
+}
+
+/*button */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap');
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100px;
+
+    box-sizing: border-box;
+    margin-top: -20px;
+}
+
+.wrapper>h4 {
+    position: relative;
+    z-index: 5;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+    width: 400px;
+    border-radius: 15px;
+    color: floralwhite;
+    font-size: 24px;
+    background: #333537;
+    box-shadow: -4px -4px 5px rgba(120, 120, 120, 0.25), 4px 4px 5px rgba(120, 120, 120, 0.25);
+    z-index: 1;
+}
+
+
+.container::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    height: 50px;
+    width: 170px;
+    border-radius: 5px;
+
+    z-index: 1;
+    top: calc(50% - 25px);
+    left: calc(50% - 170px);
+    transition: all 0.4s cubic-bezier(1, 0.04, 0.66, 1.23);
+}
+
+.cash-selected {
+    animation: pressed-left 0.4s cubic-bezier(1, 0.04, 0.66, 1.23);
+}
+
+.card-selected {
+    animation: pressed-right 0.4s cubic-bezier(1, 0.04, 0.66, 1.23);
+}
+
+.cash-selected::after {
+    left: calc(50% - 170px);
+}
+
+.card-selected::after {
+    left: calc(50% - 0px);
+}
+
+label {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /*   border: 1px solid red; */
+    width: 50%;
+    cursor: pointer;
+    height: 100%;
+    z-index: 2;
+}
+
+/* label::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: none;
+    height: 50px;
+    width: 170px;
+    border-radius: 5px;
+  background: #f2f2ff;
+  box-shadow: inset 2px 2px 11px #e5e5e5, 
+              inset -5px -5px 11px #ffffff;
+    z-index: 1;
+    top: calc(50% - 25px);
+    left: calc(50% - 85px);
+  } */
+
+span {
+    position: relative;
+    z-index: 2;
+}
+
+input {
+    display: none;
+}
+
+input:checked+label {
+    color: #2180e1;
+}
+
+input:checked+label::after {
+    display: block;
+}
+
+@keyframes pressed-left {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(0.98, 0.98);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes pressed-right {
+    0% {
+        transform: scale(1, 1);
+    }
+
+    50% {
+        transform: scale(0.98, 0.98);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+.quote{
+    border-bottom: 2px solid white;
+}
+
+.time {
+    font-family: Alice;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 111.08%;
+
+    /* identical to box height, or 71px */
+    letter-spacing: -0.04em;
+
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 120px;
+}
+
+.relax {
+    font-family: Andada;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 111.08%;
+
+    /* identical to box height, or 27px */
+    letter-spacing: -0.04em;
+
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 90px;
+    justify-content: center;
+}
