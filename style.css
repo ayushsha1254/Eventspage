@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-@import url(//db.onlinewebfonts.com/c/b459103556cd3b6504b5a9fe47b8ca07?family=Swiss+721);
 
 * {
     padding: 0;
@@ -210,7 +209,8 @@ nav ul li.btn.hide i:before {
     width: 400px;
     border-radius: 15px;
     color: floralwhite;
-    font-size: 24px;
+    font-size: 30px;
+    
     background: #333537;
     box-shadow: -4px -4px 5px rgba(120, 120, 120, 0.25), 4px 4px 5px rgba(120, 120, 120, 0.25);
     z-index: 1;
@@ -279,49 +279,32 @@ label {
     left: calc(50% - 85px);
   } */
 
-span {
-    position: relative;
-    z-index: 2;
-}
+
 
 input {
     display: none;
 }
 
-input:checked+label {
+
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
     color: #2180e1;
 }
 
-input:checked+label::after {
-    display: block;
-}
 
-@keyframes pressed-left {
-    0% {
-        transform: scale(1, 1);
-    }
-
-    50% {
-        transform: scale(0.98, 0.98);
-    }
-
-    100% {
-        transform: scale(1, 1);
-    }
-}
-
-@keyframes pressed-right {
-    0% {
-        transform: scale(1, 1);
-    }
-
-    50% {
-        transform: scale(0.98, 0.98);
-    }
-
-    100% {
-        transform: scale(1, 1);
-    }
+span:hover{
+    color: #2180e1;
+    text-shadow: -4px -4px 5px rgba(120, 120, 120, 0.25), 4px 4px 5px rgba(120, 120, 120, 0.25);
+    
+  transition: box-shadow 0.7s ease-in-out;
+    
+    
+    
 }
 
 .quote{
