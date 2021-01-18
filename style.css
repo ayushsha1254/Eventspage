@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Londrina+Outline&family=Londrina+Shadow&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -108,12 +110,15 @@ nav ul li.btn.hide i:before {
     margin: 20px;
     padding: 10px;
     border-right: 2px solid white;
+    margin-left: 50px;
+    margin-right: 100px;
+
 }
 
 #thirteen {
     height: 100%;
     width: 100%;
-    font-family: Swis721 BdOul BT;
+    font-family: Londrina Shadow;
     font-style: normal;
     font-weight: bold;
     font-size: 288px;
@@ -148,6 +153,7 @@ nav ul li.btn.hide i:before {
     margin-left: auto;
     margin-right: auto;
     margin: 20px;
+    
 
 }
 
@@ -312,14 +318,14 @@ span:hover{
 }
 
 .time {
-    font-family: Alice;
+    font-family: Italiana;
     font-style: normal;
     font-weight: normal;
     font-size: 64px;
     line-height: 111.08%;
 
     /* identical to box height, or 71px */
-    letter-spacing: -0.04em;
+    letter-spacing: -0.02em;
 
     color: #FFFFFF;
     text-align: center;
