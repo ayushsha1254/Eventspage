@@ -115,7 +115,7 @@ nav ul li.btn.hide i:before {
 
 }
 
-#thirteen {
+#events {
     height: 100%;
     width: 100%;
     font-family: Londrina Shadow;
@@ -313,9 +313,7 @@ span:hover{
     
 }
 
-.quote{
-    border-bottom: 2px solid white;
-}
+
 
 .time {
     font-family: Italiana;
@@ -345,13 +343,17 @@ span:hover{
     color: #FFFFFF;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 90px;
+    margin-bottom: 40px;
     justify-content: center;
 }
 
-@media (max-width: 1251.20px){
+@media (max-width: 1252.20px){
     #showsdone{
         top: -50px;
+    }
+
+    #events{
+      text-align: center;
     }
 
     .shows-det1 {
@@ -363,8 +365,12 @@ span:hover{
     .up-title{
         margin-left: auto;
         margin-right: auto;
+        
     }
 
+    .up-tit{
+      text-align: center;
+    }
     
 }
 
@@ -413,6 +419,39 @@ span:hover{
     .quote{
         padding-left: 12px;
     }
+}
+
+@media (min-width:270px) and (max-width: 410px){
+
+      .shows-det1{
+        padding-left: 75px;
+      }
+
+      .up-tit{
+        width: 300px;
+      }
+}
+
+
+
+@media (min-width:767px) and (max-width: 1252px){
+  .topshows{
+    width: 1211px;
+  }
+
+  .shows-det1{
+    border-bottom: none;
+    
+  }
+
+  #showsdone{
+    top: -170px;
+  }
+
+  .quote{
+    width: 1211px;
+  }
+
 }
 
 section {
@@ -865,4 +904,11 @@ section {
     .even-event p {
       font-size: 16px;
     }
+  }
+
+  @media (min-width:767px) and (max-width: 1252px){
+    .even-event{
+      width: 1252px;
+    }
+
   }
